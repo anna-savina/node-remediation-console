@@ -1,6 +1,7 @@
-import { defineConfig } from "cypress";
-import * as util from "util";
 import * as path from "path";
+import * as util from "util";
+
+import { defineConfig } from "cypress";
 
 const exec = util.promisify(require("child_process").exec);
 const runCommand = (cmd, failOnError = true) => {

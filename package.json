@@ -13,7 +13,8 @@
     "ts-node": "ts-node -O '{\"module\":\"commonjs\"}'",
     "lint": "eslint ./src --fix && stylelint \"src/**/*.css\" --allow-empty-input --fix",
     "open-cypress": "yarn cypress open --e2e --browser=chrome",
-    "test": "yarn cypress run --e2e --browser=chrome"
+    "test": "yarn cypress run --e2e --browser=chrome",
+    "run-test": "yarn cypress run --spec 'cypress/e2e/tests/DefaultNHCTest.cy.ts'"
   },
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.12.2",

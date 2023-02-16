@@ -7,4 +7,10 @@ const gotoNodeHealthChecks = () => {
   cy.contains("NodeHealthChecks", { timeout: 120000 }).click();
 };
 
-export { gotoNodeHealthChecks };
+const gotoNodeHealthCheckDetails = (name: string) => {
+  expandComputeNav();
+  cy.contains("NodeHealthChecks", { timeout: 120000 }).click();
+  cy.contains(name, { timeout: 12000 }).click();
+};
+
+export { gotoNodeHealthChecks, gotoNodeHealthCheckDetails };
