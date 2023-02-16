@@ -14,7 +14,7 @@ export function login() {
   cy.visit("/");
   cy.contains("admin").click();
   cy.get("#inputUsername").type("kubeadmin");
-  cy.get("#inputPassword").type("obnGL-Gzo68-HphJI-guWso{enter}");
+  cy.get("#inputPassword").type("Gddox-8Dfn5-CZnBv-vPKXW{enter}");
 }
 
 export { selectFromDropdown, closePopover };
