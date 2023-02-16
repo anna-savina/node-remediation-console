@@ -23,7 +23,8 @@ const runCommand = (cmd, failOnError = true) => {
 
 export default defineConfig({
   e2e: {
-    baseUrl: "http://localhost:9000",
+    baseUrl:
+      "https://console-openshift-console.apps.ocp-edge-cluster-0.qe.lab.redhat.com",
     setupNodeEvents(on, config) {
       on("task", {
         deleteAllNHCs() {
